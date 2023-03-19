@@ -1,3 +1,4 @@
+Don't use "https"
 Arabic text for Bahrain National Pavilion looks not the same as Miro board
 Arabic main text have 5 paragraphs, but Miro have 4
 Tab icon & title, description etc.

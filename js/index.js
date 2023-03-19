@@ -1,5 +1,5 @@
 window.onload = init;
-document.onkeydown = show;
+document.onwheel = show;
 
 function init() {
 	document.getElementById('leftHolder').style.marginTop = "25vh";
@@ -16,5 +16,3 @@ function show() {
 	document.getElementById('mainHolder').style.marginTop = "10vh";
 	document.getElementById('logo').style.marginTop = "calc(100vh - 120px)";
 }
-
-$(document).bind('mousewheel', show);

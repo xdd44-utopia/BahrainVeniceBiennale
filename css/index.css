@@ -148,6 +148,7 @@ p {
 #mainLeft, #mainCenter, #mainRight {
 	display: inline-block;
 	vertical-align: top;
+	scrollbar-width: none;
 }
 
 #mainLeft, #mainRight {

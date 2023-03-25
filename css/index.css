@@ -140,6 +140,14 @@ p {
 	display: inline-block;
 }
 
+#arabicTitleLeft, #arabicTitleRight {
+	font-family: 'Graphik Arabic Web Regular';
+}
+
+#englishTitleLeft, #englishTitleRight {
+	font-family: 'Graphik Web';
+}
+
 #mainText {
 	display: flex;
 	justify-content: space-between;
@@ -163,6 +171,7 @@ p {
 #mainLeft > p, #mainRight > p {
 	margin-block-start: 1em;
 	margin-block-end: 1em;
+	line-height: 150%;
 }
 
 #mainLeft::-webkit-scrollbar, #mainRight::-webkit-scrollbar{
@@ -170,14 +179,16 @@ p {
 }
 
 #mainLeft {
+	font-family: 'Sang Bleu Republic';
 	margin-right: 2.5vw;
 }
 
 #mainCenter {
+	font-family: 'Sang Bleu Republic';
 	margin-top: 1vh;
 	width: 17vw;
 	margin-right: 2vw;
-	font-size: 1.8vh;
+	font-size: 1.6vh;
 	text-align: center;
 }
 
@@ -186,15 +197,24 @@ p {
 }
 
 #mainRight {
+	font-family: 'Lyon Arabic Text Web';
 	text-align: right;
 }
 
 #signature {
 	display: flex;
 	justify-content: space-between;
-	font-size: 1.8vh;
+	font-size: 1.6vh;
 }
 
 #englishSignature, #arabicSignature {
 	display: inline-block;
+}
+
+#englishSignature {
+	font-family: 'Sang Bleu Republic';
+}
+
+#arabicSignature {
+	font-family: 'Lyon Arabic Text Web';
 }

@@ -37,16 +37,19 @@ body {
 
 #leftHolder {
 	margin-left: 10vw;
+	margin-top: 25vh;
 	width: 5vw;
 }
 
 #middleHolder {
 	margin-left: 42.5vw;
+	margin-top: 25vh;
 	width: 15vw;
 }
 
 #rightHolder {
 	margin-left: 85vw;
+	margin-top: 25vh;
 	width: 5vw;
 }
 
@@ -98,6 +101,10 @@ body {
 
 /* main */
 
+#mobileTitle {
+	display: none;
+}
+
 #mainHolder {
 	position: relative;
 
@@ -124,7 +131,7 @@ p {
 
 #main {
 	width: 60vw;
-	padding-top: 4vh;
+	padding-top: 3.2vh;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -132,7 +139,7 @@ p {
 #arabicTitle, #englishTitle {
 	display: flex;
 	justify-content: space-between;
-	font-size: 4vh;
+	font-size: 5vh;
 	line-height: 120%;
 }
 
@@ -219,4 +226,8 @@ p {
 
 #arabicSignature {
 	font-family: 'Graphik Arabic Web Regular';
+}
+
+#mobileSignature {
+	display: none;
 }

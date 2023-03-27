@@ -1,0 +1,152 @@
+/* foreground */
+
+.foregroundHolder {
+	z-index: 1;
+	transition: margin-top .8s;
+}
+
+#leftHolder {
+	margin-left: 10vw;
+	width: 15vw;
+}
+
+#middleHolder {
+	margin-left: 41vw;
+	width: 18vw;
+}
+
+#rightHolder {
+	margin-left: 75vw;
+	width: 15vw;
+}
+
+#leftImage {
+	width: 15vw;
+}
+
+#middleImage {
+	width: 18vw;
+}
+
+#rightImage {
+	width: 15vw;
+}
+
+/* logo */
+
+#logo {
+	height: 10vh;
+}
+
+#BVLogo {
+	height: 8vh;
+	margin-left: 1vh;
+	margin-top: 1vh;
+}
+
+#BACALogo {
+	height: 8vh;
+	margin-right: 1vh;
+	margin-top: 1vh;
+}
+
+/* main */
+
+#mobileTitle {
+	display: flex;
+	justify-content: space-between;
+}
+
+#arabicTitle {
+	display: none;
+}
+
+#englishTitle {
+	display: none;
+}
+
+#main {
+	width: 72vw;
+	margin-top: 0;
+	padding-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mobileEnglishTitle, #mobileArabicTitle {
+	font-size: 4vh;
+	margin-top: -5vh;
+}
+
+#englishTitleUp, #englishTitleDown {
+	line-height: 120%;
+	font-family: 'Sang Bleu Republic';
+}
+
+#englishTitleDown {
+	margin-left: 15vw;
+}
+
+#arabicTitleUp, #arabicTitleDown {
+	line-height: 120%;
+	font-family: 'Lyon Arabic Text Web';
+}
+
+#arabicTitleUp {
+	padding-left: 5vw;
+}
+
+#arabicTitleDown {
+	padding-right: 5vw;
+}
+
+#switchAR, #switchEN {
+	font-family: 'Graphik Web';
+	font-size: 2vh;
+}
+
+#mainText {
+	width: 55vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mainLeft, #mainRight {
+	font-size: 1vh;
+	width: 55vw;
+	height: 60vh;
+}
+
+#mainCenter {
+	display: none;
+}
+
+#signature {
+	display: none;
+}
+
+#mobileSignature {
+	display: block;
+	width: 64vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4vh;
+}
+
+#mobileInfoSignature {
+	font-family: 'Graphik Web';
+	display: flex;
+	justify-content: space-between;
+	font-size: 2vw;
+}
+
+#mobileLeftLeft, #mobileLeftRight {
+	display: inline-block;
+}
+
+#mobileTitleSignature {
+	font-family: 'Sang Bleu Republic';
+	margin-top: 2vh;
+	font-size: 3.6vw;
+	text-align: center;
+}

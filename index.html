@@ -8,8 +8,10 @@
 	<meta name="author" content="">
 	<title>Sweating Assets</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 450px) and (max-device-height: 950px)" href="css/index_mobile.css" />
 	<link rel="stylesheet" type="text/css" href="css/cursor.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 450px) and (max-device-height: 950px)" href="css/cursor_mobile.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/jquery-3.6.4.min.js"></script>
 </head>
@@ -50,6 +52,19 @@
 
 	<div id="mainHolder">
 		<div id="main">
+
+			<div id="mobileTitle">
+				<div id="mobileEnglishTitle">
+					<p id="englishTitleUp">Sweating</p>
+					<p id="englishTitleDown"><i>Assets</i></p>
+				</div>
+				<p id="switchAR" onclick="switchAR()">AR</p>
+				<p id="switchEN" onclick="switchEN()">EN</p>
+				<div id="mobileArabicTitle">
+					<p id="arabicTitleUp">أصول</p>
+					<p id="arabicTitleDown">رَطِبة</p>
+				</div>
+			</div>
 
 			<div id="arabicTitle">
 				<p id="arabicTitleLeft">رَطِبة</p>
@@ -102,6 +117,17 @@
 			<div id="signature">
 				<p id="englishSignature">BAHRAIN NATIONAL PAVILION</p>
 				<p id="arabicSignature">جناح مملكة البحرين	</p>
+			</div>
+
+			<div id="mobileSignature">
+				<div id="mobileInfoSignature">
+					<div id="mobileLeftSignature">
+						<p id="mobileLeftLeft">BAHRAIN NATIONAL PAVILION</p>
+						<p id="mobileLeftRight"></p>
+					</div>
+					<p id="mobileRightSignature">May 20 - November 16 2023</p>
+				</div>
+				<p id="mobileTitleSignature"><i>LA BIENNALE DI VENEZIA</i></p>
 			</div>
 	
 		</div>

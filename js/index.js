@@ -1,4 +1,4 @@
-window.onload = show;
+window.onload = init;
 window.addEventListener("touchmove", show, false);
 document.onwheel = show;
 

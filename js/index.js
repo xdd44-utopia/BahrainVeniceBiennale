@@ -1,4 +1,4 @@
-window.onload = init;
+window.onload = show;
 window.addEventListener("touchmove", show, false);
 document.onwheel = show;
 
@@ -15,5 +15,5 @@ function show() {
 	document.getElementById('middleHolder').style.marginTop = "28vh";
 	document.getElementById('rightHolder').style.marginTop = "28vh";
 	document.getElementById('mainHolder').style.marginTop = "10vh";
-	document.getElementById('logo').style.marginTop = "calc(100vh - 120px)";
+	document.getElementById('logo').style.marginTop = "88vh";
 }

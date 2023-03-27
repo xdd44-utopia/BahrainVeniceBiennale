@@ -74,7 +74,7 @@ body {
 	position: fixed;
 	top: 0;
 	width: 100vw;
-	height: 120px;
+	height: 12vh;
 	z-index: 2;
 	display: flex;
 	justify-content: space-between;
@@ -85,15 +85,15 @@ body {
 }
 
 #BVLogo {
-	height: 60px;
-	margin-left: 30px;
-	margin-top: 30px;
+	height: 10vh;
+	margin-left: 1vh;
+	margin-top: 1vh;
 }
 
 #BACALogo {
-	height: 60px;
-	margin-right: 30px;
-	margin-top: 30px;
+	height: 10vh;
+	margin-right: 1vh;
+	margin-top: 1vh;
 }
 
 /* main */
@@ -141,15 +141,17 @@ p {
 }
 
 #arabicTitleLeft, #arabicTitleRight {
-	font-family: 'Graphik Arabic Web Regular';
+	font-family: 'Lyon Arabic Text Web';
 }
 
 #englishTitleLeft, #englishTitleRight {
-	font-family: 'Graphik Web';
+	font-family: 'Sang Bleu Republic';
 }
 
 #mainText {
 	display: flex;
+	font-size: x-small;
+	text-align: justify;
 	justify-content: space-between;
 }
 
@@ -161,7 +163,7 @@ p {
 
 #mainLeft, #mainRight {
 	margin-top: 3vh;
-	width: 19vw;
+	width: 17vw;
 	height: 50vh;
 	overflow-y: scroll;
 	position: relative;
@@ -186,7 +188,7 @@ p {
 #mainCenter {
 	font-family: 'Sang Bleu Republic';
 	margin-top: 1vh;
-	width: 17vw;
+	width: 20vw;
 	margin-right: 2vw;
 	font-size: 1.6vh;
 	text-align: center;
@@ -198,7 +200,7 @@ p {
 
 #mainRight {
 	font-family: 'Lyon Arabic Text Web';
-	text-align: right;
+	/* text-align: right; */
 }
 
 #signature {
@@ -212,9 +214,9 @@ p {
 }
 
 #englishSignature {
-	font-family: 'Sang Bleu Republic';
+	font-family: 'Graphik Web';
 }
 
 #arabicSignature {
-	font-family: 'Lyon Arabic Text Web';
+	font-family: 'Graphik Arabic Web Regular';
 }

@@ -15,7 +15,7 @@ function init() {
 
 function show() {
 	document.getElementById('mainHolder').style.marginTop = "10vh";
-	document.getElementById('logo').style.marginTop = (isPhone ? "90vh" : "88vh");
+	document.getElementById('logo').style.marginTop = (isPhone ? "82vh" : "88vh");
 }
 
 function switchAR() {

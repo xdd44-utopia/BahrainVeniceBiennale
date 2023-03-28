@@ -65,6 +65,10 @@
 	display: none;
 }
 
+#mainHolder {
+	height: 72vh;
+}
+
 #main {
 	width: 72vw;
 	margin-top: 0;
@@ -107,6 +111,7 @@
 
 #mainText {
 	width: 55vw;
+	height: 55vh;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -114,7 +119,7 @@
 #mainLeft, #mainRight {
 	font-size: 1vh;
 	width: 55vw;
-	height: 60vh;
+	height: 53vh;
 }
 
 #mainCenter {

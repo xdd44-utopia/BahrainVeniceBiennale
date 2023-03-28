@@ -1,8 +1,3 @@
-window.onresize = function() {
-    document.body.height = window.innerHeight;
-}
-window.onresize();
-
 isPhone = window.matchMedia('screen and (max-device-width: 450px) and (max-device-height: 950px)').matches;
 
 window.onload = init;

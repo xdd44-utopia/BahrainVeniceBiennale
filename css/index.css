@@ -210,7 +210,7 @@ p {
 
 #mainRight {
 	font-family: 'Lyon Arabic Text Web';
-	/* text-align: right; */
+	text-align-last: right;
 }
 
 #signature {

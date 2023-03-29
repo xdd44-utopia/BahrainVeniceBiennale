@@ -1,6 +1,6 @@
 isPhone = window.matchMedia('screen and (max-device-width: 450px) and (max-device-height: 950px)').matches;
 
-window.onload = show;
+window.onload = init;
 window.addEventListener("touchmove", show, false);
 document.onwheel = show;
 
@@ -12,20 +12,19 @@ function init() {
 
 	adjustDynamicValue();
 
-	document.getElementById('mainHolder').style.marginTop = "125%";
-	document.getElementById('logo').style.marginTop = "100%";
-
 	if (isPhone) {
+		document.getElementById('mainHolder').style.marginTop = "270%";
+		document.getElementById('logo').style.marginTop = "225%";
 		switchEN();
+	}
+	else {
+		document.getElementById('mainHolder').style.marginTop = "125%";
+		document.getElementById('logo').style.marginTop = "100%";
 	}
 }
 
 function show() {
 
-	if (isPhone) {
-		switchEN();
-	}
-	
 	if (!hasShown) {
 		hasShown = true;
 		adjustDynamicValue();

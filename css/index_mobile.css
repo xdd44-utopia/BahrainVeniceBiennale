@@ -32,24 +32,6 @@
 	width: 15vw;
 }
 
-/* logo */
-
-/* #logo {
-	height: 10vh;
-}
-
-#BVLogo {
-	height: 8vh;
-	margin-left: 1vh;
-	margin-top: 1vh;
-}
-
-#BACALogo {
-	height: 8vh;
-	margin-right: 1vh;
-	margin-top: 1vh;
-} */
-
 /* main */
 
 #mobileTitle {
@@ -65,10 +47,6 @@
 	display: none;
 }
 
-#mainHolder {
-	height: 72vh;
-}
-
 #main {
 	width: 72vw;
 	margin-top: 0;
@@ -79,7 +57,7 @@
 
 #mobileEnglishTitle, #mobileArabicTitle {
 	font-size: 4vh;
-	margin-top: -5vh;
+	margin-top: -10%;
 }
 
 #englishTitleUp, #englishTitleDown {
@@ -111,7 +89,7 @@
 
 #mainText {
 	width: 55vw;
-	height: 55vh;
+	height: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -119,7 +97,7 @@
 #mainLeft, #mainRight {
 	font-size: 1vh;
 	width: 55vw;
-	height: 53vh;
+	height: 92.5%;
 }
 
 #mainCenter {
@@ -135,7 +113,7 @@
 	width: 64vw;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 4vh;
+	margin-top: 10%;
 }
 
 #mobileInfoSignature {
@@ -151,7 +129,7 @@
 
 #mobileTitleSignature {
 	font-family: 'Sang Bleu Republic';
-	margin-top: 2vh;
+	margin-top: 7.5%;
 	font-size: 3.6vw;
 	text-align: center;
 }

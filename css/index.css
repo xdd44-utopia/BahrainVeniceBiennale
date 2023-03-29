@@ -105,14 +105,13 @@ html {
 }
 
 #mainHolder {
-	position: relative;
+	position: fixed;
 
 	width: 75vw;
 	height: 80%;
 
 	margin-top: 225%; /*DEBUG*/
-	margin-bottom: 10%;
-	margin-left: auto;
+	margin-left: 12.5vw;
 	margin-right: auto;
 
 	z-index: 1;

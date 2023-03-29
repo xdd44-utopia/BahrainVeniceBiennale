@@ -15,11 +15,13 @@ function init() {
 	if (isPhone) {
 		document.getElementById('mainHolder').style.marginTop = "270%";
 		document.getElementById('logo').style.marginTop = "225%";
+		document.getElementById('contributorHolder').style.marginTop = "-5vh";
 		switchEN();
 	}
 	else {
 		document.getElementById('mainHolder').style.marginTop = "125%";
 		document.getElementById('logo').style.marginTop = "100%";
+		document.getElementById('contributorHolder').style.marginTop = "-5vh";
 	}
 }
 
@@ -62,6 +64,7 @@ function adjustDynamicValue() {
 	for (var i = 0; i < foregroundHolder.length; i++) {
 		foregroundHolder.item(i).style.marginTop = (window.innerHeight * 0.25) + 'px';
 	}
+	document.getElementById('contributorHolder').style.marginTop = "0";
 	if (hasShown) {
 		document.getElementById("mainHolder").style.marginTop = (window.innerHeight * 0.1) + 'px';
 		document.getElementById('logo').style.marginTop = (isPhone ? (window.innerHeight * 0.90) + 'px' : (window.innerHeight * 0.90) + 'px');

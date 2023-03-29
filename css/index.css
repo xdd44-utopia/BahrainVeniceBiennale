@@ -72,6 +72,26 @@ html {
 	width: 5vw;
 }
 
+/* contributor */
+
+#contributorHolder {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 2;
+	margin-top: -10vh;
+	transition: margin-top 2s;
+	transition-timing-function: ease;
+}
+
+#contributor {
+	margin-top: 10px;
+	color: #2d5b50;
+	font-family: 'Sang Bleu Republic';
+	font-size: medium;
+	text-align: center;
+}
+
 /* logo */
 
 #logo {

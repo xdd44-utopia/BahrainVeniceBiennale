@@ -1,12 +1,19 @@
 isPhone = window.matchMedia('screen and (max-device-width: 450px) and (max-device-height: 950px)').matches;
 
-window.onload = init;
+window.onload = show;
 window.addEventListener("touchmove", show, false);
 document.onwheel = show;
 
+window.addEventListener('resize', adjustDynamicValue);
+
+var hasShown = false;
+
 function init() {
-	document.getElementById('mainHolder').style.marginTop = "125vh";
-	document.getElementById('logo').style.marginTop = "100vh";
+
+	adjustDynamicValue();
+
+	document.getElementById('mainHolder').style.marginTop = "125%";
+	document.getElementById('logo').style.marginTop = "100%";
 
 	if (isPhone) {
 		switchEN();
@@ -14,8 +21,15 @@ function init() {
 }
 
 function show() {
-	document.getElementById('mainHolder').style.marginTop = "10vh";
-	document.getElementById('logo').style.marginTop = (isPhone ? "82vh" : "88vh");
+
+	if (isPhone) {
+		switchEN();
+	}
+	
+	if (!hasShown) {
+		hasShown = true;
+		adjustDynamicValue();
+	}
 }
 
 function switchAR() {
@@ -42,4 +56,15 @@ function switchEN() {
 	document.getElementById('mobileLeftLeft').innerText = "BAHRAIN NATIONAL PAVILION";
 	document.getElementById('mobileLeftRight').innerText = "";
 	document.getElementById('mobileRightSignature').innerText = "May 20 - November 16 2023";
+}
+
+function adjustDynamicValue() {
+	var foregroundHolder = document.getElementsByClassName('foregroundHolder');
+	for (var i = 0; i < foregroundHolder.length; i++) {
+		foregroundHolder.item(i).style.marginTop = (window.innerHeight * 0.25) + 'px';
+	}
+	if (hasShown) {
+		document.getElementById("mainHolder").style.marginTop = (window.innerHeight * 0.1) + 'px';
+		document.getElementById('logo').style.marginTop = (isPhone ? (window.innerHeight * 0.90) + 'px' : (window.innerHeight * 0.90) + 'px');
+	}
 }

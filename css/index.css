@@ -229,7 +229,7 @@ p {
 
 #mainRight {
 	font-family: 'Lyon Arabic Text Web';
-	text-align-last: right;
+	direction: rtl;
 }
 
 #signature {

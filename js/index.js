@@ -8,20 +8,29 @@ window.addEventListener('resize', adjustDynamicValue);
 
 var hasShown = false;
 
+var isContributor = false;
+var mainLeft;
+var mainRight;
+var contributorLeft;
+var contributorRight;
+
 function init() {
+
+	mainLeft = document.getElementById('mainLeft').innerHTML;
+	mainRight = document.getElementById('mainRight').innerHTML;
+	contributorLeft = document.getElementById('contributorLeft').innerHTML;
+	contributorRight = document.getElementById('contributorRight').innerHTML;
 
 	adjustDynamicValue();
 
 	if (isPhone) {
 		document.getElementById('mainHolder').style.marginTop = "270%";
 		document.getElementById('logo').style.marginTop = "225%";
-		document.getElementById('contributorHolder').style.marginTop = "-5vh";
 		switchEN();
 	}
 	else {
 		document.getElementById('mainHolder').style.marginTop = "125%";
 		document.getElementById('logo').style.marginTop = "100%";
-		document.getElementById('contributorHolder').style.marginTop = "-5vh";
 	}
 }
 
@@ -31,6 +40,20 @@ function show() {
 		hasShown = true;
 		adjustDynamicValue();
 	}
+}
+
+function switchContributor() {
+	if (isContributor) {
+		document.getElementById('mainLeft').innerHTML = mainLeft;
+		document.getElementById('mainRight').innerHTML = mainRight;
+		document.getElementById('contributor').innerHTML = "CONTRIBUTORS";
+	}
+	else {
+		document.getElementById('mainLeft').innerHTML = contributorLeft;
+		document.getElementById('mainRight').innerHTML = contributorRight;
+		document.getElementById('contributor').innerHTML = "CURATIORIAL STATEMENT";
+	}
+	isContributor = !isContributor;
 }
 
 function switchAR() {
@@ -64,7 +87,6 @@ function adjustDynamicValue() {
 	for (var i = 0; i < foregroundHolder.length; i++) {
 		foregroundHolder.item(i).style.marginTop = (window.innerHeight * 0.25) + 'px';
 	}
-	document.getElementById('contributorHolder').style.marginTop = "0";
 	if (hasShown) {
 		document.getElementById("mainHolder").style.marginTop = (window.innerHeight * 0.1) + 'px';
 		document.getElementById('logo').style.marginTop = (isPhone ? (window.innerHeight * 0.90) + 'px' : (window.innerHeight * 0.90) + 'px');

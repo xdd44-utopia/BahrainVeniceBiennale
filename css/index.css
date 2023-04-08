@@ -72,26 +72,6 @@ html {
 	width: 5vw;
 }
 
-/* contributor */
-
-#contributorHolder {
-	position: fixed;
-	top: 0;
-	width: 100vw;
-	z-index: 2;
-	margin-top: -10vh;
-	transition: margin-top 2s;
-	transition-timing-function: ease;
-}
-
-#contributor {
-	margin-top: 10px;
-	color: #2d5b50;
-	font-family: 'Sang Bleu Republic';
-	font-size: medium;
-	text-align: center;
-}
-
 /* logo */
 
 #logo {
@@ -176,7 +156,7 @@ p {
 
 #mainText {
 	display: flex;
-	margin-top: -3%;
+	margin-top: 0;
 	height: 70%;
 	font-size: x-small;
 	text-align: justify;
@@ -190,7 +170,7 @@ p {
 }
 
 #mainLeft, #mainRight {
-	margin-top: 3vh;
+	margin-top: 1vh;
 	width: 17vw;
 	height: 50vh;
 	overflow-y: scroll;
@@ -217,10 +197,14 @@ p {
 	font-family: 'Sang Bleu Republic';
 	width: 20vw;
 	height: 100%;
-	margin-top: 1%;
+	margin-top: -2vh;
 	margin-right: 2vw;
-	font-size: 1.25vw;
+	font-size: 1vw;
 	text-align: center;
+}
+
+#mainDate {
+	font-size: 0.8vw;
 }
 
 #mainTitle {
@@ -245,12 +229,29 @@ p {
 
 #englishSignature {
 	font-family: 'Graphik Web';
+	width: 20vw;
+}
+
+#contributor {
+	font-family: 'Graphik Web';
+	text-align: center;
+}
+
+#contributor:hover {
+	font-weight: bold;
+	text-decoration: underline;
 }
 
 #arabicSignature {
 	font-family: 'Graphik Arabic Web Regular';
+	direction: rtl;
+	width: 20vw;
 }
 
 #mobileSignature {
+	display: none;
+}
+
+#contributorLeft, #contributorRight {
 	display: none;
 }

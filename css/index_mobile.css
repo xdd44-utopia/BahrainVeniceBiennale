@@ -40,7 +40,7 @@
 	top: 0;
 	width: 100vw;
 	z-index: 2;
-	margin-top: -10vh;
+	margin-top: -5vh;
 
 	transition: margin-top 2s;
 	transition-timing-function: ease;
@@ -56,13 +56,21 @@
 }
 
 #contributorAR {
+	font-size: 0;
 	margin-left: 14vw;
 	font-family: 'Graphik Arabic Web Regular';
 }
 
 #contributorEN {
+	font-size: 1.5vh;
 	margin-right: 14vw;
 	font-family: 'Graphik Web';
+}
+
+/*logo*/
+
+#logo {
+	margin-top: 225%;
 }
 
 /* main */
@@ -70,6 +78,14 @@
 #mobileTitle {
 	display: flex;
 	justify-content: space-between;
+}
+
+#mobileEnglishTitle {
+	display: block;
+}
+
+#mobileArabicTitle {
+	display: none;
 }
 
 #arabicTitle {
@@ -80,12 +96,24 @@
 	display: none;
 }
 
+#mainHolder {
+	margin-top: 270%;
+}
+
 #main {
 	width: 72vw;
 	margin-top: 0;
 	padding-top: 0;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#mainLeft {
+	display: block;
+}
+
+#mainRight {
+	display: none;
 }
 
 #mobileEnglishTitle, #mobileArabicTitle {
@@ -120,6 +148,14 @@
 	font-size: 2vh;
 }
 
+#switchEN {
+	display: none;
+}
+
+#switchAR {
+	display: block;
+}
+
 #mainText {
 	width: 55vw;
 	height: 80%;
@@ -147,7 +183,7 @@
 	width: 64vw;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 #mobileInfoSignature {

@@ -24,14 +24,7 @@ function init() {
 	adjustDynamicValue();
 
 	if (isPhone) {
-		document.getElementById('mainHolder').style.marginTop = "270%";
-		document.getElementById('logo').style.marginTop = "225%";
-		document.getElementById('contributorHolder').style.marginTop = "-5vh";
 		switchEN();
-	}
-	else {
-		document.getElementById('mainHolder').style.marginTop = "125%";
-		document.getElementById('logo').style.marginTop = "100%";
 	}
 }
 

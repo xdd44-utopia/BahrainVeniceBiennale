@@ -89,7 +89,7 @@ html {
 	display: flex;
 	justify-content: space-between;
 
-	margin-top: 100vh;
+	margin-top: 100%;
 	transition: margin-top 2s;
 	transition-timing-function: ease;
 }
@@ -116,7 +116,7 @@ html {
 	width: 75vw;
 	height: 80%;
 
-	margin-top: 225%; /*DEBUG*/
+	margin-top: 125%; /*DEBUG*/
 	margin-left: 12.5vw;
 	margin-right: auto;
 

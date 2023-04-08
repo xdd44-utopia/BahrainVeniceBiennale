@@ -45,6 +45,7 @@ function show() {
 
 function switchContributor() {
 	if (isContributor) {
+		document.getElementById('mainText').style.fontSize = "x-small";
 		document.getElementById('mainLeft').innerHTML = mainLeft;
 		document.getElementById('mainRight').innerHTML = mainRight;
 		document.getElementById('contributor').innerHTML = "CONTRIBUTORS";
@@ -52,6 +53,7 @@ function switchContributor() {
 		document.getElementById('contributorAR').innerHTML = "المساهمون";
 	}
 	else {
+		document.getElementById('mainText').style.fontSize = "small";
 		document.getElementById('mainLeft').innerHTML = contributorLeft;
 		document.getElementById('mainRight').innerHTML = contributorRight;
 		document.getElementById('contributor').innerHTML = "CURATIORIAL STATEMENT";

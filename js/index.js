@@ -112,4 +112,7 @@ function adjustDynamicValue() {
 		document.getElementById("mainHolder").style.marginTop = (window.innerHeight * 0.1) + 'px';
 		document.getElementById('logo').style.marginTop = (isPhone ? (window.innerHeight * 0.90) + 'px' : (window.innerHeight * 0.90) + 'px');
 	}
+	else {
+		document.getElementById('scrollArrow').style.marginTop = (isPhone ? (window.innerHeight * 0.90) + 'px' : (window.innerHeight * 0.90) + 'px');
+	}
 }

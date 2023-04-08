@@ -104,6 +104,35 @@ html {
 	margin-right: 1%;
 }
 
+/* Arrow */
+#scrollArrow {
+	color: #000000;
+	position: fixed;
+	display: block;
+
+	width: 10vh;
+	margin-left: calc(50vw - 5vh);
+
+	margin-top: 90vh;
+	transition: margin-top 2s;
+	transition-timing-function: ease;
+
+	animation: opa 1.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes opa {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* main */
 
 #mobileTitle {

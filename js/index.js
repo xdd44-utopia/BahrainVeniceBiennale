@@ -30,6 +30,8 @@ function init() {
 
 function show() {
 
+	document.getElementById('scrollArrow').style.marginTop = "-10vh";
+
 	if (!hasShown) {
 		hasShown = true;
 		adjustDynamicValue();
@@ -103,10 +105,10 @@ function adjustDynamicValue() {
 	for (var i = 0; i < foregroundHolder.length; i++) {
 		foregroundHolder.item(i).style.marginTop = (window.innerHeight * 0.25) + 'px';
 	}
-	if (isPhone) {
-		document.getElementById('contributorHolder').style.marginTop = "5%";
-	}
 	if (hasShown) {
+		if (isPhone) {
+			document.getElementById('contributorHolder').style.marginTop = "5%";
+		}
 		document.getElementById("mainHolder").style.marginTop = (window.innerHeight * 0.1) + 'px';
 		document.getElementById('logo').style.marginTop = (isPhone ? (window.innerHeight * 0.90) + 'px' : (window.innerHeight * 0.90) + 'px');
 	}

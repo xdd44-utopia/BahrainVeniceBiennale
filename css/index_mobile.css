@@ -32,6 +32,39 @@
 	width: 15vw;
 }
 
+/* contributor */
+
+#contributorHolder {
+	display: flex;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	z-index: 2;
+	margin-top: -10vh;
+
+	transition: margin-top 2s;
+	transition-timing-function: ease;
+
+	justify-content: space-between;
+}
+
+#contributorEN, #contributorAR {
+	margin-top: 10px;
+	color: #2d5b50;
+	font-size: 1.5vh;
+	text-align: center;
+}
+
+#contributorAR {
+	margin-left: 14vw;
+	font-family: 'Graphik Arabic Web Regular';
+}
+
+#contributorEN {
+	margin-right: 14vw;
+	font-family: 'Graphik Web';
+}
+
 /* main */
 
 #mobileTitle {
@@ -98,6 +131,7 @@
 	font-size: 1vh;
 	width: 55vw;
 	height: 92.5%;
+	margin-right: 0;
 }
 
 #mainCenter {

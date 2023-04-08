@@ -72,6 +72,12 @@ html {
 	width: 5vw;
 }
 
+/* contributor */
+
+#contributorHolder {
+	display: none;
+}
+
 /* logo */
 
 #logo {

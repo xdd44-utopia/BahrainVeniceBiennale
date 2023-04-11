@@ -40,7 +40,7 @@ function show() {
 
 function switchContributor() {
 	if (isContributor) {
-		document.getElementById('mainText').style.fontSize = "x-small";
+		document.getElementById('mainText').style.fontSize = "small";
 		document.getElementById('mainLeft').innerHTML = mainLeft;
 		document.getElementById('mainRight').innerHTML = mainRight;
 		document.getElementById('contributor').innerHTML = "CONTRIBUTORS";

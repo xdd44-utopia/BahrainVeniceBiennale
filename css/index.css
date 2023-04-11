@@ -193,7 +193,7 @@ p {
 	display: flex;
 	margin-top: 0;
 	height: 70%;
-	font-size: x-small;
+	font-size: small;
 	text-align: justify;
 	justify-content: space-between;
 }

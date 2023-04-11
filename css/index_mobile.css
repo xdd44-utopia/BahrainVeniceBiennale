@@ -183,7 +183,7 @@
 	width: 68vw;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5%;
+	margin-top: 8%;
 }
 
 #mobileInfoSignature {
@@ -199,7 +199,7 @@
 
 #mobileTitleSignature {
 	font-family: 'Sang Bleu Republic';
-	margin-top: 5%;
+	margin-top: 2.5%;
 	font-size: 2.25vw;
 	text-align: center;
 }

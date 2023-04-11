@@ -103,16 +103,16 @@ function switchEN() {
 function adjustDynamicValue() {
 	var foregroundHolder = document.getElementsByClassName('foregroundHolder');
 	for (var i = 0; i < foregroundHolder.length; i++) {
-		foregroundHolder.item(i).style.marginTop = (window.innerHeight * 0.25) + 'px';
+		foregroundHolder.item(i).style.marginTop = (document.documentElement.clientHeight * 0.25) + 'px';
 	}
 	if (hasShown) {
 		if (isPhone) {
 			document.getElementById('contributorHolder').style.marginTop = "5%";
 		}
-		document.getElementById("mainHolder").style.marginTop = (window.innerHeight * 0.1) + 'px';
-		document.getElementById('logo').style.marginTop = (isPhone ? (window.innerHeight * 0.90) + 'px' : (window.innerHeight * 0.90) + 'px');
+		document.getElementById("mainHolder").style.marginTop = (document.documentElement.clientHeight * 0.1) + 'px';
+		document.getElementById('logo').style.marginTop = (isPhone ? (document.documentElement.clientHeight * 0.90) + 'px' : (document.documentElement.clientHeight * 0.90) + 'px');
 	}
 	else {
-		document.getElementById('scrollArrow').style.marginTop = (isPhone ? (window.innerHeight * 0.90) + 'px' : (window.innerHeight * 0.90) + 'px');
+		document.getElementById('scrollArrow').style.marginTop = (isPhone ? (document.documentElement.clientHeight * 0.90) + 'px' : (document.documentElement.clientHeight * 0.90) + 'px');
 	}
 }

@@ -277,10 +277,6 @@ p {
 	text-decoration: underline;
 }
 
-b {
-	text-decoration: underline;
-}
-
 #arabicSignature {
 	font-family: 'Graphik Arabic Web Regular';
 	direction: rtl;

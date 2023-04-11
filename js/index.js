@@ -109,7 +109,9 @@ function adjustDynamicValue() {
 		if (isPhone) {
 			document.getElementById('contributorHolder').style.marginTop = "5%";
 		}
+		document.getElementById("background").style.height= (document.documentElement.clientHeight * 1.2) + 'px';
 		document.getElementById("mainHolder").style.marginTop = (document.documentElement.clientHeight * 0.1) + 'px';
+		document.getElementById("mainHolder").style.height = (document.documentElement.clientHeight * 0.8) + 'px';
 		document.getElementById('logo').style.marginTop = (isPhone ? (document.documentElement.clientHeight * 0.90) + 'px' : (document.documentElement.clientHeight * 0.90) + 'px');
 	}
 	else {
